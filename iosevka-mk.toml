@@ -3,11 +3,12 @@ family = "Iosevka"
 design = [
   "sans",
   "sp-fixed",
+  "ss20",
   "v-capital-g-toothless",
   "v-zero-slashed",
   "v-one-nobase",
   "v-tilde-low",
-  "v-asterisk-hexlow",
+  "v-asterisk-low",
   "v-caret-high",
   "v-underscore-low",
   "v-at-short",
