@@ -2,8 +2,8 @@
 
 set -eufo pipefail
 
-readonly tmp=$(mktemp -d)
-readonly repo="$tmp/Iosevka"
+mkdir -p build
+readonly repo="build/Iosevka"
 
 cd "$(dirname "$0")"
 git clone --depth 1 git@github.com:be5invis/Iosevka "$repo"
@@ -15,4 +15,4 @@ rsync -a --delete "$repo/dist/iosevka-mk/ttf/" ttf/
 
 echo
 echo "Finished building iosevka-mk."
-echo "To clean up, run: rm -rf $tmp"
+echo "To clean up, run: rm -rf build"

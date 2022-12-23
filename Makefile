@@ -8,7 +8,6 @@ all: $(out)
 deps:
 	brew install node
 	brew install ttfautohint
-	brew install caryll/tap/otfcc-mac64
 
 clean:
 	rm -rf $(out)

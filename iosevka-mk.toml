@@ -17,13 +17,24 @@ design = [
   "v-percent-rings",
 ]
 
-# Only normal, no extended.
+# Build normal, and also extended for BQN.
 [buildPlans.iosevka-mk.widths.normal]
-shape = 5
+shape = 500
 menu = 5
 css = "normal"
+[buildPlans.iosevka-mk.widths.extended]
+shape = 600
+menu = 7
+css = "expanded"
 
-# Only normal and italic, no oblique.
-[buildPlans.iosevka-mk.slants]
-upright = "normal"
-italic = "italic"
+# Only build normal and italic, not oblique.
+[buildPlans.iosevka-mk.slopes.upright]
+angle = 0
+shape = "upright"
+menu  = "upright"
+css   = "normal"
+[buildPlans.iosevka-mk.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu  = "italic"
+css   = "italic"
